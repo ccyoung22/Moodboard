@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.output-container {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.input-container {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}

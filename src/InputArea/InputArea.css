@@ -1,0 +1,10 @@
+.input-bar {
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 20px;
+}
