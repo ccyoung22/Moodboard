@@ -13,7 +13,7 @@ function Form({ addText }) {
   return (
     <>
       <form onSubmit={handleSubmit} className="text-area-container">
-        <div className="text-area-container">
+        <div className="input-box-container">
           <textarea
             className="input-box"
             type="text"

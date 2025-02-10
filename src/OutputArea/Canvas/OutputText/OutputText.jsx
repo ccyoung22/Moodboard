@@ -1,7 +1,9 @@
-function OutputText({ text }) {
+import "./OutputText.css";
+
+function OutputText({ text, fontName }) {
   return (
     <>
-      <p>{text}</p>
+      <p className={fontName}>{text}</p>
     </>
   );
 }

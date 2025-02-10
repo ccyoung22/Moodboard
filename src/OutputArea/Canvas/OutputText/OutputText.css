@@ -1,0 +1,45 @@
+@font-face {
+  font-family: NeueMantana;
+  src: url("/src/assets/Fonts/NeueMetana-Bold\ copy.otf");
+}
+
+@font-face {
+  font-family: DxGlitar;
+  src: url("/src/assets/Fonts/DxGlitar.ttf");
+}
+
+@font-face {
+  font-family: Harmond;
+  src: url("/src/assets/Fonts/Harmond-SemiBoldCondensed\ copy.otf");
+}
+
+@font-face {
+  font-family: Fraunces;
+  src: url("/src/assets/Fonts/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: Obrazec;
+  src: url("/src/assets/Fonts/Obrazec-2.ttf");
+}
+
+.NeueMantana {
+  font-family: "NeueMantana";
+}
+
+.GillSans {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.DxGlitar {
+  font-family: "DxGlitar";
+}
+.Harmond {
+  font-family: "Harmond";
+}
+.Fraunces {
+  font-family: "Fraunces";
+}
+.Obrazec {
+  font-family: "Obrazec";
+}
