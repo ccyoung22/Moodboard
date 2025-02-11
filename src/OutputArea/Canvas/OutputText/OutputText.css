@@ -43,3 +43,12 @@
 .Obrazec {
   font-family: "Obrazec";
 }
+
+.NeueMantana,
+.GillSans,
+.DxGlitar,
+.Harmond,
+.Fraunces,
+.Obrazec {
+  letter-spacing: 5px;
+}

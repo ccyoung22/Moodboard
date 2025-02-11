@@ -1,9 +1,9 @@
 import Canvas from "./Canvas/Canvas.jsx";
 
-function OutputArea({ text, fontName }) {
+function OutputArea({ text, fontName, fontSize }) {
   return (
     <>
-      <Canvas text={text} fontName={fontName} />
+      <Canvas text={text} fontName={fontName} fontSize={fontSize} />
     </>
   );
 }

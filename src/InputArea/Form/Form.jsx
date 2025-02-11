@@ -1,13 +1,21 @@
 import { useState } from "react";
 import "./Form.css";
 
-function Form({ addText }) {
+function Form({ addText, setFontSize }) {
   const [input, setInput] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
     addText(input);
     setInput("");
+  }
+
+  function increaseFontSize() {
+    setFontSize((fontSize) => fontSize + 5);
+  }
+
+  function decreaseFontSize() {
+    setFontSize((fontSize) => fontSize - 5);
   }
 
   return (
@@ -27,8 +35,20 @@ function Form({ addText }) {
             Submit
           </button>
           <div className="size-button-container">
-            <button className="size-buttons">+</button>
-            <button className="size-buttons">-</button>
+            <button
+              type="button"
+              className="size-buttons"
+              onClick={increaseFontSize}
+            >
+              +
+            </button>
+            <button
+              type="button"
+              className="size-buttons"
+              onClick={decreaseFontSize}
+            >
+              -
+            </button>
           </div>
         </div>
       </form>
