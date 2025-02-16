@@ -3,6 +3,7 @@ import "./App.css";
 import InputArea from "./InputArea/InputArea.jsx";
 import OutputArea from "./OutputArea/OutputArea.jsx";
 import { ColorPicker } from "primereact/colorpicker";
+import DrawingCanvas from "./DrawingCanva.jsx";
 
 function App() {
   const [text, setText] = useState("");
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="main-container">
+      <DrawingCanvas />
       <div className="output-container">
         <OutputArea
           text={text}
