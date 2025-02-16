@@ -10,6 +10,7 @@ function App() {
   const [fontName, setFontName] = useState("");
   const [fontSize, setFontSize] = useState(20);
   const [color, setColor] = useState("#000000");
+  const [pen, setPen] = useState(false);
 
   function addText(input) {
     setText(input);
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div className="main-container">
-      <DrawingCanvas />
+      <DrawingCanvas isPenActive={pen} />
       <div className="output-container">
         <OutputArea
           text={text}
@@ -34,6 +35,8 @@ function App() {
           fontSize={setFontSize}
           setColor={setColor}
           color={color}
+          setPen={setPen}
+          pen={pen}
         />
       </div>
     </div>

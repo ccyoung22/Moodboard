@@ -1,12 +1,14 @@
 import { useState, useRef } from "react";
 import getStroke from "perfect-freehand";
 
-const DrawingCanvas = () => {
+const DrawingCanvas = ({ isPenActive }) => {
   const [strokes, setStrokes] = useState([]);
   const isDrawing = useRef(false); // Track whether the mouse is held down
   const canvasRef = useRef(null); // Reference to the canvas element
 
   const handlePointerDown = (e) => {
+    if (!isPenActive) return;
+
     isDrawing.current = true; // Start drawing
 
     const rect = canvasRef.current.getBoundingClientRect(); // Get canvas position
