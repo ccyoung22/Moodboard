@@ -33,9 +33,6 @@
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-
-
-
 /* .input-bar {
   background-color: whitesmoke;
   width: 80vw;
@@ -61,4 +58,14 @@
 /* }
 
 .bar-container:hover .arrow {
-  transform: translateY(-150px); }
+  transform: translateY(-150px); } */
+
+.p-colorpicker {
+  padding: 20px;
+}
+
+.p-colorpicker-panel {
+  border-radius: 8px;
+  background-color: white;
+  border-style: none;
+}
