@@ -7,12 +7,11 @@ import { ColorPicker } from "primereact/colorpicker";
 function InputArea({ addText, setFontName, setFontSize, color, setColor }) {
   return (
     <div className="bar-container">
-      {/* <span className="arrow">⬆️</span> */}
       <img src="/src/assets/arrow.png" alt="arrow" className="arrow" />
       <div className="input-bar">
         <Form addText={addText} setFontSize={setFontSize} />
         <FontMenu setFontName={setFontName} />
-        <ColorPicker value={color} onChange={(e) => setColor(e.value)} />;
+        <ColorPicker value={color} onChange={(e) => setColor(e.value)} />
       </div>
     </div>
   );
