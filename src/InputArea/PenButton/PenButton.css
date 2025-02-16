@@ -1,0 +1,9 @@
+.penImg {
+  width: 40px;
+  padding: 3px;
+}
+
+.penButton {
+  border-style: solid;
+  border-radius: 10px;
+}

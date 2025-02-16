@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import getStroke from "perfect-freehand";
 
-const DrawingCanvas = ({ isPenActive }) => {
+const DrawingCanvas = ({ isPenActive, penColor, strokeSize }) => {
   const [strokes, setStrokes] = useState([]);
   const isDrawing = useRef(false); // Track whether the mouse is held down
   const canvasRef = useRef(null); // Reference to the canvas element
@@ -48,6 +48,7 @@ const DrawingCanvas = ({ isPenActive }) => {
         border: "1px solid black",
         touchAction: "none",
         position: "absolute",
+        zIndex: 0,
       }}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
@@ -55,16 +56,19 @@ const DrawingCanvas = ({ isPenActive }) => {
       onPointerLeave={handlePointerUp}
     >
       {strokes.map((stroke, i) => {
-        const pathData = getStroke(stroke, { size: 4, smoothing: 0.4 })
+        const pathData = getStroke(stroke, {
+          size: strokeSize,
+          smoothing: 0.1,
+        })
           .map(([x, y]) => `${x},${y}`)
           .join(" ");
         return (
           <polyline
             key={i}
             points={pathData}
-            fill="black"
-            stroke="black"
-            strokeWidth="2"
+            fill={`#${penColor}`}
+            stroke={`#${penColor}`}
+            strokeWidth={`#${strokeSize}`}
           />
         );
       })}
