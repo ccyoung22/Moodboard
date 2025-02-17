@@ -44,7 +44,7 @@ function Form({ addText, setFontSize }) {
             </button>
             <button
               type="button"
-              className="size-buttons"
+              className="decrease-size-buttons"
               onClick={decreaseFontSize}
             >
               -

@@ -19,7 +19,7 @@ function FontMenu({ setFontName }) {
         className="dropdown"
       >
         <option value="" disabled>
-          Fonts
+          Select a font
         </option>
         <option value="NeueMantana">NeueMantana</option>
         <option value="GillSans">GillSans</option>
