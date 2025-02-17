@@ -1,6 +1,6 @@
 @font-face {
   font-family: NeueMantana;
-  src: url("/src/assets/Fonts/NeueMetana-Bold\ copy.otf");
+  src: url("/src/assets/Fonts/NeueMetana-Bold.otf");
 }
 
 @font-face {
@@ -10,12 +10,12 @@
 
 @font-face {
   font-family: Harmond;
-  src: url("/src/assets/Fonts/Harmond-SemiBoldCondensed\ copy.otf");
+  src: url("/src/assets/Fonts/Harmond.otf");
 }
 
 @font-face {
   font-family: Fraunces;
-  src: url("/src/assets/Fonts/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+  src: url("/src/assets/Fonts/Fraunces-Italic-VariableFont.ttf");
 }
 
 @font-face {
