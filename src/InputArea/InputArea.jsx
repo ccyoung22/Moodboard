@@ -27,9 +27,13 @@ function InputArea({
       <img src="/arrow.png" alt="arrow" className="arrow" />
       <div className="input-bar">
         <Form addText={addText} setFontSize={setFontSize} />
-        <FontMenu setFontName={setFontName} />
-        <p>Select a Font Colour:</p>
-        <ColorPicker value={color} onChange={(e) => setColor(e.value)} />
+        <div className="font-color-container">
+          <FontMenu setFontName={setFontName} />
+          <div className="text-colour-container">
+            <p className="colour-text">Text Colour:</p>
+            <ColorPicker value={color} onChange={(e) => setColor(e.value)} />
+          </div>
+        </div>
         <PenButton setPen={setPen} pen={pen} />
         <EraserButton setEraser={setEraser} />
         <p>Select a Pen Colour:</p>
