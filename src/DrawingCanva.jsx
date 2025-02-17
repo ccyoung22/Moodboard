@@ -1,10 +1,16 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import getStroke from "perfect-freehand";
 
-const DrawingCanvas = ({ isPenActive, penColor, strokeSize }) => {
+const DrawingCanvas = ({ isPenActive, penColor, strokeSize, eraser }) => {
   const [strokes, setStrokes] = useState([]);
   const isDrawing = useRef(false); // Track whether the mouse is held down
   const canvasRef = useRef(null); // Reference to the canvas element
+
+  useEffect(() => {
+    if (eraser) {
+      setStrokes([]);
+    }
+  }, [eraser]);
 
   const handlePointerDown = (e) => {
     if (!isPenActive) return;

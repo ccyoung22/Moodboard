@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./App.css";
 import InputArea from "./InputArea/InputArea.jsx";
 import OutputArea from "./OutputArea/OutputArea.jsx";
@@ -13,6 +13,7 @@ function App() {
   const [pen, setPen] = useState(false);
   const [penColor, setPenColor] = useState("#000000");
   const [strokeSize, setStrokeSize] = useState(6);
+  const [eraser, setEraser] = useState(false);
 
   function addText(input) {
     setText(input);
@@ -24,6 +25,7 @@ function App() {
         isPenActive={pen}
         penColor={penColor}
         strokeSize={strokeSize}
+        eraser={eraser}
       />
       <div className="output-container">
         <OutputArea
@@ -47,6 +49,7 @@ function App() {
           setPenColor={setPenColor}
           strokeSize={strokeSize}
           setStrokeSize={setStrokeSize}
+          setEraser={setEraser}
         />
       </div>
     </div>

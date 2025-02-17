@@ -5,6 +5,7 @@ import FontMenu from "./FontMenu/FontMenu.jsx";
 import { ColorPicker } from "primereact/colorpicker";
 import PenButton from "./PenButton/PenButton.jsx";
 import StrokeWidth from "./StokeWidth/StrokeWidth.jsx";
+import EraserButton from "./EraserButton/EraserButton.jsx";
 
 function InputArea({
   addText,
@@ -18,6 +19,8 @@ function InputArea({
   setPenColor,
   strokeSize,
   setStrokeSize,
+
+  setEraser,
 }) {
   return (
     <div className="bar-container">
@@ -28,6 +31,7 @@ function InputArea({
         <p>Select a Font Colour:</p>
         <ColorPicker value={color} onChange={(e) => setColor(e.value)} />
         <PenButton setPen={setPen} pen={pen} />
+        <EraserButton setEraser={setEraser} />
         <p>Select a Pen Colour:</p>
         <ColorPicker value={penColor} onChange={(e) => setPenColor(e.value)} />
         <StrokeWidth strokeSize={strokeSize} setStrokeSize={setStrokeSize} />
