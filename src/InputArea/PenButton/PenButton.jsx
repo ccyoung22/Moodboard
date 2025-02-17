@@ -12,9 +12,9 @@ function PenButton({ setPen, pen }) {
     <>
       <button onClick={togglePen} className="penButton">
         {pen ? (
-          <img src="/src/assets/pen-on-icon.png" className="penImg" />
+          <img src="/pen-on-icon.png" className="penImg" />
         ) : (
-          <img src="/src/assets/pen-off-icon.png" className="penImg" />
+          <img src="/pen-off-icon.png" className="penImg" />
         )}
       </button>
     </>

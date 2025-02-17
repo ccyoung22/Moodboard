@@ -24,7 +24,7 @@ function InputArea({
 }) {
   return (
     <div className="bar-container">
-      <img src="/src/assets/arrow.png" alt="arrow" className="arrow" />
+      <img src="/arrow.png" alt="arrow" className="arrow" />
       <div className="input-bar">
         <Form addText={addText} setFontSize={setFontSize} />
         <FontMenu setFontName={setFontName} />
