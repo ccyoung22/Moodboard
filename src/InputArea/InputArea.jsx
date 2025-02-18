@@ -34,11 +34,20 @@ function InputArea({
             <ColorPicker value={color} onChange={(e) => setColor(e.value)} />
           </div>
         </div>
-        <PenButton setPen={setPen} pen={pen} />
-        <EraserButton setEraser={setEraser} />
-        <p>Select a Pen Colour:</p>
-        <ColorPicker value={penColor} onChange={(e) => setPenColor(e.value)} />
-        <StrokeWidth strokeSize={strokeSize} setStrokeSize={setStrokeSize} />
+        <div className="pen-eraser-button-container">
+          <PenButton setPen={setPen} pen={pen} />
+          <EraserButton setEraser={setEraser} />
+        </div>
+        <div className="pen-stroke-container">
+          <div className="pen-colour-div-container">
+            <p className="pen-colour-p-label">Pen Colour:</p>
+            <ColorPicker
+              value={penColor}
+              onChange={(e) => setPenColor(e.value)}
+            />
+          </div>
+          <StrokeWidth strokeSize={strokeSize} setStrokeSize={setStrokeSize} />
+        </div>
       </div>
     </div>
   );

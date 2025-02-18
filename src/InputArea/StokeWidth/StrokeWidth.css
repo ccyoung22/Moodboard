@@ -1,0 +1,30 @@
+.input-width-bar {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #e9e9e9; /* Change this to your preferred colour */
+  border-radius: 5px;
+  border-width: 0.5px;
+  border: 1px solid #000000;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.input-width-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #fffdfd;
+  border: 1px solid #000000; /* Match the track colour */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.input-width-bar::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}

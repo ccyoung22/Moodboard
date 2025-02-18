@@ -17,8 +17,8 @@
 }
 
 .input-bar {
-  background-color: whitesmoke;
-  width: 80vw;
+  background-color: rgb(255, 255, 255);
+  width: 53vw;
   border-radius: 30px;
   display: flex;
   flex-direction: row;
@@ -69,6 +69,7 @@
 .font-color-container {
   display: flex;
   flex-direction: column;
+  margin-left: 5px;
 }
 
 .text-colour-container {
@@ -86,4 +87,38 @@
   font-size: 14px;
   padding-right: 8px;
   padding-left: 4px;
+  font-weight: 100;
+}
+
+.pen-eraser-button-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.pen-colour-p-label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding-right: 10px;
+  letter-spacing: 00.03cap;
+  margin: 0;
+}
+
+.pen-colour-div-container {
+  display: flex;
+  min-height: 60px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pen-stroke-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }

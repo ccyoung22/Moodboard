@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import "./StrokeWidth.css";
 function StrokeWidth({ strokeSize, setStrokeSize }) {
   function changeStrokeWidth(e) {
     setStrokeSize(e.target.value);
@@ -14,6 +15,7 @@ function StrokeWidth({ strokeSize, setStrokeSize }) {
         min="2"
         max="16"
         onChange={changeStrokeWidth}
+        className="input-width-bar"
       />
     </>
   );
