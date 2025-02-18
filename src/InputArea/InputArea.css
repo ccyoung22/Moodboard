@@ -18,7 +18,7 @@
 
 .input-bar {
   background-color: rgb(255, 255, 255);
-  max-width: 53vw;
+  max-width: 54vw;
   min-width: 680px;
   border-radius: 30px;
   display: flex;
@@ -33,28 +33,11 @@
   transform: translateY(5px);
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
-/* 
- .input-bar {
-  background-color: whitesmoke;
-  width: 80vw;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-  padding: 15px;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(5px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
- } */
 
 .bar-container:hover .input-bar {
   opacity: 1;
   visibility: visible;
-  transform: translateY(-30px);
+  transform: translateY(-15px);
 } /* Moves up */
 
 .bar-container:hover .arrow {
